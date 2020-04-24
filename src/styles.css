@@ -9,12 +9,18 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	margin: 0;
+  margin: 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(235, 216, 40), 0px 0px 12px #fff;
 }
 .currency {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	align-items: left;
+	justify-content: space;
 }
 .currency select {
 	background: transparent;
@@ -24,12 +30,22 @@ body {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(235, 216, 40), 0px 0px 12px #fff;
 }
 .currency input {
 	border: 0;
 	background: transparent;
 	font-size: 22px;
-	text-align: right;
+  text-align: right;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(235, 216, 40), 0px 0px 12px #fff;
 }
 .animated {
   -webkit-animation-duration: 7s;
@@ -227,4 +243,12 @@ body {
       0px -10px 100px rgb(221, 210, 114),
       0px -10px 100px  rgb(221, 210, 114),
   }
+}
+.jumbotron {
+  background-color: #00000071;
+  text-align: center;
+
+}
+#results {
+  display: none;
 }
