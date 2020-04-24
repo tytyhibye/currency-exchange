@@ -18,7 +18,7 @@ export class Xchange {
 
 
 
-  //   async getRate() {
+  //  async getRate() {
 //     let currencyResponse;
 //     try {
 //       let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
