@@ -17,11 +17,11 @@ $(document).ready(function () {
     function getElements(response) {
       if (response) {
         $('#result').text(parseInt(response * inputAmount));
-        $('#inputForm').hide()
+        $('#inputForm').hide();
         $('#results').fadeIn(2000);
       } else {
         $('#result').text("0 because this doesn't seem to be a recognized currency. Please select another from the list.");
-        $('#inputForm').hide()
+        $('#inputForm').hide();
         $('#results').fadeIn(2000);
       }
     }
