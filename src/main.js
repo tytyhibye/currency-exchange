@@ -13,9 +13,9 @@ $(document).ready(function () {
     console.log(inputCurrency);
     (async () => {
       let xchange = new Xchange();
-      const response = await xchange.getRate(inputCurrency);
+      let response = await xchange.getData(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
       console.log('response: ', response);
-      getElements(response.conversion_rates.$(inputCurrency));
+      getElements(response.conversion_rates[inputCurrency]);
     })();
     function getElements(response) {
       if (response) {
