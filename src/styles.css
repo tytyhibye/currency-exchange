@@ -18,14 +18,13 @@ body {
   text-shadow: 0px 0px 12px rgb(235, 216, 40), 0px 0px 12px #fff;
 }
 .currency {
-	display: flex;
-	align-items: left;
-	justify-content: space;
+	text-align: center;
 }
 .currency select {
-	background: transparent;
-	border: 0;
-	padding-right: 20px;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  padding-left: 28vw;
 	font-size: 22px;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -37,10 +36,11 @@ body {
   text-shadow: 0px 0px 12px rgb(235, 216, 40), 0px 0px 12px #fff;
 }
 .currency input {
-	border: 0;
+  text-align: center;
+  border: 0;
 	background: transparent;
 	font-size: 22px;
-  text-align: right;
+  text-align: center;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
   font-weight: 700;
@@ -247,8 +247,27 @@ body {
 .jumbotron {
   background-color: #00000071;
   text-align: center;
+  font-size: 8em;
+  background-repeat: no-repeat;
+  font-family: Georgia, fantasy;
+  color: rgb(230, 161, 14);
+  text-shadow: 0 1px 0 #ffffff, 0 2px 0 #888888,
+           0 3px 0 #777777, 0 4px 0 #666666,
+           0 5px 0 #555555, 0 6px 0 #444444,
+           0 7px 0 #ffae52, 0 8px 7px rgba(255, 156, 63, 0.4),
+           0 9px 10px rgba(255, 94, 0, 0.2);
+  word-wrap: break-word;
+  border: double;
+  border-width: 5px;
+  border-color: ;
 
 }
 #results {
   display: none;
+}
+.animated2 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }

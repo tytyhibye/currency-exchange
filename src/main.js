@@ -17,7 +17,7 @@ $(document).ready(function () {
     function getElements(response) {
       if (response) {
         $('#result').text(parseInt(response * inputAmount));
-        $('#input-form').hide()
+        $('#inputForm').hide()
         $('#results').fadeIn(2000);
       } else {
         $('#result').text("Uh oh, this doesn't seem to be a recognized currency. Please select another from the list.");
