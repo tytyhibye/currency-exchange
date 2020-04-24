@@ -3,7 +3,7 @@ export class Xchange {
   async getData(url) {
     try {
       let request = await fetch(url);
-      if (request.status == 200) {
+      if (request.ok && request.status === 200) {
         let data = await request.json();
         return data;
       } else {

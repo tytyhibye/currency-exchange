@@ -9,12 +9,9 @@ $(document).ready(function () {
     event.preventDefault();
     let inputCurrency = $('#currency').val();
     let inputAmount = $('#dollar').val();
-    console.log(inputAmount);
-    console.log(inputCurrency);
     (async () => {
       let xchange = new Xchange();
       let response = await xchange.getData(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
-      console.log('response: ', response);
       getElements(response.conversion_rates[inputCurrency]);
     })();
     function getElements(response) {
