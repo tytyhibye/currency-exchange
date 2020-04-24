@@ -1,37 +1,50 @@
-# _{Application Name}_
+# _Currency Exchanger_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Asynchrony and APIs Friday Project, 04.24.2020_
 
-#### By _**{List of contributors}**_
+#### By _**Tyler Bates**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_An Interactive site using API calls to return the current value of selected currency in USD_
+
+## Project Specifications 
+| Spec:                                                                | Example:   | Output: |
+|----------------------------------------------------------------------|------------|---------|
+| User enters dollar amount in USD                                     | $5         | $5      |
+| user selects which currency they would like to convert to            | China Yuan | "CNY"   |
+| Site fetch's list of currency exchange from www.exchangerate-api.com | N/A        | N/A     |
+| Site uses input to select element from API list                      | "CNY"      | "CNY"   |
+| site multiplies exchange rate by user selected amount                | 7.0814 * 5 | 35      |
+| site returns and displays result to user                             | "35"       | 35      |
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+_To view this project enter https://tytyhibye.github.io/currency-exchange into your browser. 
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+For additional information on this project:
+* _clone https://github.com/tytyhibye/currency-exchange into your local directory_
+* _run npm install_
+* _run npm start_
+* _enjoy!_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+There are no known bugs at this time.
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* HTML
+* CSS
+* Bootstrap 4.4.1
+* jQuery 3.4.1
+* JavaScript
+* Webpack
+* Node.js
+* API
 
 ### License
 
 *Licensed under the MIT license*
 
-Copyright (c) 2020 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_Tyler Bates @ Epicodus_**
