@@ -20,7 +20,9 @@ $(document).ready(function () {
         $('#inputForm').hide()
         $('#results').fadeIn(2000);
       } else {
-        $('#result').text("Uh oh, this doesn't seem to be a recognized currency. Please select another from the list.");
+        $('#result').text("0 because this doesn't seem to be a recognized currency. Please select another from the list.");
+        $('#inputForm').hide()
+        $('#results').fadeIn(2000);
       }
     }
   });
