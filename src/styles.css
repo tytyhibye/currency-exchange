@@ -22,13 +22,11 @@ body {
 }
 .currency select {
   text-align: center;
-  background: transparent;
+  background-color: #000000a4;
+  display: inline-block;
   border: 0;
-  padding-left: 28vw;
-	font-size: 22px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+  text-align: center;
+  font-size: 25px;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
   font-weight: 700;
