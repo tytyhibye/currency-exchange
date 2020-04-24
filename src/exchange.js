@@ -1,22 +1,19 @@
 export class Xchange {
   async getRate() {
-   
-    let jsonifiedResponse;
+    let currencyResponse;
     try {
-      let response = await fetch(` https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
-      // console.log(await);
+      let response = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`);
+      console.log(response)
       if (response.ok && response.status == 200) {
-        jsonifiedResponse = await response.json(); 
+        currencyResponse = await response.conversion_rates.AUD.json(); 
       } else {
-        jsonifiedResponse = false;
+        currencyResponse = false;
       }
     } catch (error) {
-      // console.log(catch);
+      console.log('in the catch');
       return false;
     }  
-    return jsonifiedResponse;  
+    return currencyResponse;  
   }
-
-  
-  
 }
+// response.conversion_rates.USD

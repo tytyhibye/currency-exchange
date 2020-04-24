@@ -15,17 +15,18 @@
               <form id="inputForm">
                 <div class="form-group">
                   <h3>Please enter an amount in US currency</h3>
-                  <input type="text" id="dollar" pattern="[0-9' ']+" oninvalid="setCustomValidity('Numbers only, please REFRESH the page and try again.')">
+                  <input type="number" id="dollar" pattern="[0-9' ']+" oninvalid="setCustomValidity('Numbers only, please REFRESH the page and try again.')" placeholder="1" value=1 />
                   <br>
                   <br>
                   <h3>Please choose a currency to convert to:</h3>
                   <div class="inputBox">
-                    <select class="form-control" id="planet" style= "width: auto;">
-                      <option>Japanese Yen</option>
-                      <option>Canadian Dollar</option>
-                      <option>British Pound</option>
-                      <option>Australian Dollar</option>
-                      <option>Middle-Earth Mithril</option>
+                    <select class="form-control" id="currency" style= "width: auto;">
+                      <option value="AUD" selected>Australian Dollar</option>
+                      <option value="CAD">Canadian Dollar</option>
+                      <option value="GBP">British Pound</option>
+                      <option value="JPY">Japanese Yen</option>
+                      <option value="INR">Indian Rupee</option>
+                      <option value="This ain't gone work">Middle-Earth Mithril</option>
                     </select>
                   </div>
                   <br>

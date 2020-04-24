@@ -6,6 +6,8 @@ import { Xchange } from './exchange.js';
 
 $(document).ready(function () {
   $('#button').click(function () {
+    let inputCurrency = $('#currency').val();
+    let inputAmount = $('#dollar').val();
     (async () => {
       let xchange = new Xchange();
       const response = await xchange.getRate();
@@ -14,11 +16,10 @@ $(document).ready(function () {
     })();
     function getElements(response) {
       if (response) {
-        let rate = response.filler
-        $('#result').text(rate)
+        $('#result').text(response);
       } else {
         $('#result').text('Uh oh, something went wrong. Make sure you have the proper CORS plugin/permission and try again.');
       }
     }
-    });
-  })
+  });
+});
