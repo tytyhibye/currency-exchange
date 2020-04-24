@@ -5,14 +5,17 @@ import $ from "jquery";
 import { Xchange } from './exchange.js';
 
 $(document).ready(function () {
-  $('#button').click(function () {
+  $('#button').click(function (event) {
+    event.preventDefault();
     let inputCurrency = $('#currency').val();
     let inputAmount = $('#dollar').val();
+    console.log(inputAmount);
+    console.log(inputCurrency);
     (async () => {
       let xchange = new Xchange();
       const response = await xchange.getRate(inputCurrency);
       console.log('response: ', response);
-      getElements(response);
+      getElements(response.conversion_rates.$(inputCurrency));
     })();
     function getElements(response) {
       if (response) {
