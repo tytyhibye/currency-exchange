@@ -21,7 +21,7 @@ $(document).ready(function () {
       if (response) {
         $('#result').text(parseInt(response * inputAmount));
       } else {
-        $('#result').text('Uh oh, something went wrong. Make sure you have the proper CORS plugin/permission and try again.');
+        $('#result').text("Uh oh, this doesn't seem to be a recognized currency. Please select another from the list.");
       }
     }
   });
