@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currency Exchanger</title>
-</head>
-<body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Xtreme Xchanger</h1>
-      <h4>Select a currency to convert:</h4>
-      
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchanger</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Xtreme Xchanger</h1>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="inputField">
+              <form id="inputForm">
+                <div class="form-group">
+                  <h3>Please enter an amount in US currency</h3>
+                  <input type="text" id="dollar" pattern="[0-9' ']+" oninvalid="setCustomValidity('Numbers only, please REFRESH the page and try again.')">
+                  <br>
+                  <br>
+                  <h3>Please choose a currency to convert to:</h3>
+                  <div class="inputBox">
+                    <select class="form-control" id="planet" style= "width: auto;">
+                      <option>British Pound</option>
+                      <option>Chinese Yuan</option>
+                      <option>Indian Rupee</option>
+                      <option>Oman Rial</option>
+                      <option>Middle-Earth Mithril</option>
+                    </select>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="animated bounceInRight">
+                    <button class="btn-animated bounceInRight" id="button">Convert</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-6">
+              <div id="results">
+                <div class="errors"></div>
+                <div id="result"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
