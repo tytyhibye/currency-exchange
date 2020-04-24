@@ -10,13 +10,13 @@ $(document).ready(function () {
     let inputAmount = $('#dollar').val();
     (async () => {
       let xchange = new Xchange();
-      const response = await xchange.getRate();
+      const response = await xchange.getRate(inputCurrency);
       console.log('response: ', response);
       getElements(response);
     })();
     function getElements(response) {
       if (response) {
-        $('#result').text(response);
+        $('#result').text(parseInt(response * inputAmount));
       } else {
         $('#result').text('Uh oh, something went wrong. Make sure you have the proper CORS plugin/permission and try again.');
       }
