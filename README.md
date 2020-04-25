@@ -30,7 +30,7 @@ For additional information on this project:
 
 ## Known Bugs
 
-There are no known bugs at this time.
+gh-pages link for some reason will take you to the readme.
 
 ## Technologies Used
 
