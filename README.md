@@ -20,7 +20,7 @@ _An Interactive site using API calls to return the current value of selected cur
 
 ## Setup/Installation Requirements
 
-_To view this project enter https://tytyhibye.github.io/currency-exchange into your browser. 
+_To view this project enter https://dreamy-davinci-616837.netlify.app/ into your browser. 
 
 For additional information on this project:
 * _clone https://github.com/tytyhibye/currency-exchange into your local directory_
