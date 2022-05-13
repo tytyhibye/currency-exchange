@@ -30,7 +30,7 @@ For additional information on this project:
 
 ## Known Bugs
 
-gh-pages link for some reason will take you to the readme.
+**EDIT:** API deprecated as of 2022, no longer functioning.
 
 ## Technologies Used
 
